@@ -1,0 +1,322 @@
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Bitter&family=Electrolize&family=Kanit&family=Press+Start+2P&display=swap");
+
+/* animation keyframes */
+@-webkit-keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@-webkit-keyframes scrollEffectIn {
+  from {
+    background-color: transparent;
+    box-shadow: 0px 0px 0px transparent;
+  }
+
+  to {
+    background-color: #0e1d3a;
+    box-shadow: 0px 2px 10px black;
+  }
+}
+
+@keyframes scrollEffectIn {
+  from {
+    background-color: transparent;
+    box-shadow: 0px 0px 0px transparent;
+  }
+
+  to {
+    background-color: #0e1d3a;
+    box-shadow: 0px 2px 10px black;
+  }
+}
+
+@-webkit-keyframes scrollEffectOut {
+  from {
+    background-color: #0e1d3a;
+    box-shadow: 0px 2px 10px black;
+  }
+
+  to {
+    background-color: transparent;
+    box-shadow: 0px 0px 0px transparent;
+  }
+}
+
+@keyframes scrollEffectOut {
+  from {
+    background-color: #0e1d3a;
+    box-shadow: 0px 2px 10px black;
+  }
+
+  to {
+    background-color: transparent;
+    box-shadow: 0px 0px 0px transparent;
+  }
+}
+
+/* calling animation keyframe class */
+.pulse {
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+  animation-duration: 1250ms;
+  animation-iteration-count: infinite;
+}
+
+/* global styles */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.icon_size {
+  height: 32px;
+  width: 32px;
+}
+
+.icon_size-profile {
+  height: 38px;
+  width: 38px;
+}
+
+.icon_size-down-arrow {
+  height: 60px;
+  width: 60px;
+  margin-top: 13rem;
+}
+
+.logo_size {
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+}
+
+/* navigation bar styles */
+.navbar {
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  display: flex;
+  position: fixed;
+  flex-direction: row;
+  justify-content: space-between;
+  box-shadow: 0px 0px 0px transparent;
+  background-color: transparent;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: black;
+}
+
+.navbar a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+.menu_icon {
+  margin-left: 3rem;
+}
+
+.profile_icon {
+  margin-right: 3rem;
+}
+
+.menu_icon,
+.profile_icon {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  cursor: pointer;
+}
+
+.logo h2 {
+  font-family: "Press Start 2P", cursive;
+  font-size: 33px;
+  padding-top: 1rem;
+  padding-bottom: 0.25rem;
+  color: antiquewhite;
+}
+
+/* left and right menus */
+.right_menu,
+.left_menu {
+  font-family: "Press Start 2P", cursive;
+  position: fixed;
+  height: 100vh;
+  width: 30%;
+  text-align: center;
+  z-index: 1;
+  background-color: #0e1d3a;
+}
+
+.right_menu {
+  box-shadow: 0px 2px 10px black;
+  right: 0;
+}
+
+.left_menu {
+  box-shadow: 0px -2px 10px black;
+  left: 0;
+}
+
+.right_menu ul,
+.left_menu ul {
+  margin-top: 4rem;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.right_menu li,
+.left_menu li {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.menu_buttons {
+  text-decoration: none;
+  color: whitesmoke;
+  display: block;
+  padding: 20px 20px;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  transition: 400ms;
+  transition-timing-function: ease-out;
+  border-radius: 5px;
+}
+
+.menu_buttons:hover {
+  text-decoration: none;
+  color: whitesmoke;
+  background-color: #146680;
+  border-left: 3px solid whitesmoke;
+  border-right: 3px solid whitesmoke;
+  box-shadow: 2px 4px 10px black;
+}
+
+.close-btn {
+  position: relative;
+  cursor: pointer;
+}
+
+.right_close-btn {
+  float: right;
+  right: 3rem;
+  top: 1rem;
+}
+
+.left_close-btn {
+  float: left;
+  left: 3rem;
+  top: 1rem;
+}
+
+/* main styles */
+.main {
+  font-family: "Electrolize", sans-serif;
+  /* background-color: #dee0e6; */
+}
+.landing_page {
+  background-image: url("https://cdn.pixabay.com/photo/2015/10/17/17/14/background-992850_960_720.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.landing_page-foreground {
+  height: 100vh;
+  width: 100%;
+  color: antiquewhite;
+  text-align: center;
+}
+
+.landing_page-foreground_title1 {
+  padding-top: 15rem;
+}
+
+.landing_page-foreground_title2 {
+  margin-top: 2rem;
+}
+
+/* main - page-000 */
+.page_1,
+.page_2 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  background-color: #dee0e6;
+  line-height: 30px;
+  font-size: 20px;
+  text-align: center;
+}
+
+#page-1 {
+  height: 80vh;
+}
+
+#page-2 {
+  background-color: white;
+}
+
+.page_1-sub_page {
+  padding-top: 5rem;
+}
+
+.page_1-sub_page p {
+  margin-top: 2rem;
+}
+
+.page_2-sub_page .row {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.page_2-sub_page img {
+  height: 387px;
+  width: 614px;
+  display: flex;
+  justify-content: center;
+}
+
+.page_2-sub_page p {
+  position: relative;
+  top: 30%;
+}

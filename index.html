@@ -19,7 +19,183 @@
     <title>KAYCA | Polling System</title>
   </head>
   <body>
-    <h1>App is working!</h1>
+    <!-- navigation bar -->
+    <nav class="navbar" id="navigation-bar">
+      <!-- menu -->
+      <div class="menu_icon" id="user-menu">
+        <img class="icon_size" src="./img/menu.svg" alt="menu icon" />
+      </div>
+      <!-- logo -->
+      <div class="logo">
+        <a href="index.html">
+          <h2 id="logo-text">
+            KAYCA POLLS
+          </h2>
+        </a>
+      </div>
+      <!-- user profile -->
+      <div class="profile_icon" id="user-profile">
+        <img
+          class="icon_size-profile"
+          src="./img/profile.svg"
+          alt="user profile icon"
+        />
+      </div>
+    </nav>
+
+    <!-- right menu -->
+    <div class="right_menu" id="right-menu">
+      <span class="close-btn right_close-btn" id="right-close-btn">
+        <img class="icon_size" src="./img/close-btn.svg" alt="close button" />
+      </span>
+      <ul class="container">
+        <li>
+          <img class="logo_size" src="./img/kanuflag.jpg" alt="party logo" />
+        </li>
+        <li>
+          <a class="menu_buttons" href="#">Dashboard</a>
+        </li>
+        <li>
+          <a class="menu_buttons" href="#">Log-In</a>
+        </li>
+        <li>
+          <a class="menu_buttons" href="#">Sign-Up</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- left menu -->
+    <div class="left_menu" id="left-menu">
+      <span class="close-btn left_close-btn" id="left-close-btn">
+        <img class="icon_size" src="./img/close-btn.svg" alt="close button" />
+      </span>
+      <ul class="container">
+        <li>
+          <img class="logo_size" src="./img/kanuflag.jpg" alt="party logo" />
+        </li>
+        <li>
+          <a class="menu_buttons" href="#">Vote</a>
+        </li>
+        <li>
+          <a class="menu_buttons" href="#">Results</a>
+        </li>
+        <li>
+          <a class="menu_buttons" href="#">Poll Dates</a>
+        </li>
+        <li>
+          <a class="menu_buttons" href="#">Our Sponsors</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- main page -->
+    <div class="main" id="main">
+      <!-- landing page -->
+      <div class="landing_page">
+        <div class="landing_page-foreground">
+          <h1 class="landing_page-foreground_title1">
+            Welcome to the KAYCA Polling Web App
+          </h1>
+          <h2 class="landing_page-foreground_title2">
+            Vote for your ideal candidate now
+          </h2>
+          <div class="pulse">
+            <a href="#page-1">
+              <img
+                class="icon_size-down-arrow"
+                src="./img/down-arrow.svg"
+                alt="continue to next page arrow"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- page 1 -->
+      <div class="page_1" id="page-1">
+        <div class="page_1-sub_page container">
+          <h2>What Is This?</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae
+            temporibus, quidem totam, alias quibusdam magni ea aperiam voluptas
+            similique voluptate mollitia ipsam, delectus illo harum debitis
+            sequi rerum neque nesciunt deserunt recusandae obcaecati. Molestias
+            repudiandae debitis pariatur atque temporibus fugiat. Provident quas
+            dolorum voluptate dolorem possimus labore, quibusdam saepe itaque
+            nostrum voluptates facilis soluta error illum cum ex voluptatum
+            nobis consequuntur officiis accusantium tempora alias! Cumque eaque
+            corporis quas harum atque dolores aperiam reiciendis quaerat!
+          </p>
+        </div>
+      </div>
+
+      <!-- page 2 -->
+      <div class="page_2" id="page-2">
+        <div class="page_2-sub_page container-fluid">
+          <h2>What Does This Web App Do?</h2>
+          <!-- grid -->
+          <div class="row">
+            <div class="col-md-6">
+              <img src="./img/voting.svg" alt="voting" />
+            </div>
+            <div class="col-md-6">
+              <p>
+                <span>Voting</span> <br />
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga,
+                reprehenderit voluptatem corrupti quae quis obcaecati, suscipit
+                ea ducimus, sequi cum nemo sed repellendus reiciendis corporis
+                quod laborum aliquid laboriosam omnis!
+              </p>
+            </div>
+          </div>
+          <!-- grid -->
+          <div class="row">
+            <div class="col-md-6">
+              <p>
+                <span>Live Results</span> <br />
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga,
+                reprehenderit voluptatem corrupti quae quis obcaecati, suscipit
+                ea ducimus, sequi cum nemo sed repellendus reiciendis corporis
+                quod laborum aliquid laboriosam omnis!
+              </p>
+            </div>
+            <div class="col-md-6">
+              <img src="./img/results.svg" alt="results" />
+            </div>
+          </div>
+          <!-- grid -->
+          <div class="row">
+            <div class="col-md-6">
+              <img src="./img/date.svg" alt="date" />
+            </div>
+            <div class="col-md-6">
+              <p>
+                <span>Poll Dates</span> <br />
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga,
+                reprehenderit voluptatem corrupti quae quis obcaecati, suscipit
+                ea ducimus, sequi cum nemo sed repellendus reiciendis corporis
+                quod laborum aliquid laboriosam omnis!
+              </p>
+            </div>
+          </div>
+          <!-- grid -->
+          <div class="row">
+            <div class="col-md-6">
+              <p>
+                <span>Our Sponsors</span> <br />
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga,
+                reprehenderit voluptatem corrupti quae quis obcaecati, suscipit
+                ea ducimus, sequi cum nemo sed repellendus reiciendis corporis
+                quod laborum aliquid laboriosam omnis!
+              </p>
+            </div>
+            <div class="col-md-6">
+              <img src="./img/sponsors.svg" alt="sponsors" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
   <script src="./js/main.js"></script>
   <script src="./js/jquery.js"></script>
