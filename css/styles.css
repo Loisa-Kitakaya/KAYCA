@@ -1,102 +1,21 @@
-/* fonts */
-@import url("https://fonts.googleapis.com/css2?family=Bitter&family=Electrolize&family=Kanit&family=Press+Start+2P&display=swap");
-
-/* animation keyframes */
-@-webkit-keyframes pulse {
-  from {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
-
-  50% {
-    -webkit-transform: scale3d(1.05, 1.05, 1.05);
-    transform: scale3d(1.05, 1.05, 1.05);
-  }
-
-  to {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
-}
-
-@keyframes pulse {
-  from {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
-
-  50% {
-    -webkit-transform: scale3d(1.05, 1.05, 1.05);
-    transform: scale3d(1.05, 1.05, 1.05);
-  }
-
-  to {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
-}
-
-@-webkit-keyframes scrollEffectIn {
-  from {
-    background-color: transparent;
-    box-shadow: 0px 0px 0px transparent;
-  }
-
-  to {
-    background-color: #0e1d3a;
-    box-shadow: 0px 2px 10px black;
-  }
-}
+@import url("https://fonts.googleapis.com/css2?family=Prompt:wght@500&family=Sen&display=swap");
 
 @keyframes scrollEffectIn {
   from {
     background-color: transparent;
-    box-shadow: 0px 0px 0px transparent;
   }
-
   to {
-    background-color: #0e1d3a;
-    box-shadow: 0px 2px 10px black;
-  }
-}
-
-@-webkit-keyframes scrollEffectOut {
-  from {
-    background-color: #0e1d3a;
-    box-shadow: 0px 2px 10px black;
-  }
-
-  to {
-    background-color: transparent;
-    box-shadow: 0px 0px 0px transparent;
+    background-color: #3a0e0e;
   }
 }
 
 @keyframes scrollEffectOut {
   from {
-    background-color: #0e1d3a;
-    box-shadow: 0px 2px 10px black;
+    background-color: #3a0e0e;
   }
-
   to {
     background-color: transparent;
-    box-shadow: 0px 0px 0px transparent;
   }
-}
-
-/* calling animation keyframe class */
-.pulse {
-  -webkit-animation-name: pulse;
-  animation-name: pulse;
-  animation-duration: 1250ms;
-  animation-iteration-count: infinite;
-}
-
-/* global styles */
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
 }
 
 html {
@@ -104,219 +23,198 @@ html {
 }
 
 body {
-  overflow-x: hidden;
+  font-family: "Sen", sans-serif;
 }
 
-.icon_size {
-  height: 32px;
-  width: 32px;
-}
-
-.icon_size-profile {
-  height: 38px;
-  width: 38px;
-}
-
-.icon_size-down-arrow {
-  height: 60px;
-  width: 60px;
-  margin-top: 13rem;
-}
-
-.logo_size {
-  height: 90px;
-  width: 90px;
-  border-radius: 50%;
-}
-
-/* navigation bar styles */
 .navbar {
-  top: 0;
-  z-index: 1;
-  width: 100%;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
   display: flex;
-  position: fixed;
+  background-color: transparent;
   flex-direction: row;
   justify-content: space-between;
-  box-shadow: 0px 0px 0px transparent;
-  background-color: transparent;
-}
-
-.navbar a {
-  text-decoration: none;
-  color: black;
-}
-
-.navbar a:hover {
-  text-decoration: none;
-  color: black;
-}
-
-.menu_icon {
-  margin-left: 3rem;
-}
-
-.profile_icon {
-  margin-right: 3rem;
-}
-
-.menu_icon,
-.profile_icon {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  cursor: pointer;
-}
-
-.logo h2 {
-  font-family: "Press Start 2P", cursive;
-  font-size: 33px;
-  padding-top: 1rem;
-  padding-bottom: 0.25rem;
-  color: antiquewhite;
-}
-
-/* left and right menus */
-.right_menu,
-.left_menu {
-  font-family: "Press Start 2P", cursive;
   position: fixed;
-  height: 100vh;
-  width: 30%;
-  text-align: center;
-  z-index: 1;
-  background-color: #0e1d3a;
-}
-
-.right_menu {
-  box-shadow: 0px 2px 10px black;
-  right: 0;
-}
-
-.left_menu {
-  box-shadow: 0px -2px 10px black;
+  top: 0;
   left: 0;
+  right: 0;
+  z-index: 1;
 }
 
-.right_menu ul,
-.left_menu ul {
-  margin-top: 4rem;
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
+#user-menu {
+  margin-left: 1rem;
 }
 
-.right_menu li,
-.left_menu li {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+#user-profile {
+  margin-right: 1rem;
 }
 
-.menu_buttons {
-  text-decoration: none;
+#logo-text {
   color: whitesmoke;
-  display: block;
-  padding: 20px 20px;
-  border-left: 3px solid transparent;
-  border-right: 3px solid transparent;
-  transition: 400ms;
-  transition-timing-function: ease-out;
-  border-radius: 5px;
+  font-family: "Prompt", sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+  letter-spacing: 5px;
 }
 
-.menu_buttons:hover {
-  text-decoration: none;
-  color: whitesmoke;
-  background-color: #146680;
-  border-left: 3px solid whitesmoke;
-  border-right: 3px solid whitesmoke;
-  box-shadow: 2px 4px 10px black;
-}
-
-.close-btn {
-  position: relative;
+.nav-menu-btn,
+.menu_close-btn {
   cursor: pointer;
 }
 
-.right_close-btn {
-  float: right;
-  right: 3rem;
-  top: 1rem;
+.about_app img {
+  margin: 0;
+  padding: 0;
+  height: 360px;
+  width: 360px;
 }
 
-.left_close-btn {
-  float: left;
-  left: 3rem;
-  top: 1rem;
-}
-
-/* main styles */
-.main {
-  font-family: "Electrolize", sans-serif;
-  /* background-color: #dee0e6; */
-}
+.main,
 .landing_page {
-  background-image: url("https://cdn.pixabay.com/photo/2015/10/17/17/14/background-992850_960_720.png");
-  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+}
+
+.landing_page {
+  background-image: url("https://images.pexels.com/photos/681467/pexels-photo-681467.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
   background-attachment: fixed;
+  background-repeat: no-repeat;
   background-size: cover;
 }
 
 .landing_page-foreground {
+  color: whitesmoke;
+  position: relative;
+  top: 40%;
+  text-align: center;
+}
+
+.landing_page-foreground h1,
+.landing_page-foreground h2 {
+  font-size: 40px;
+}
+
+.menu_page_right,
+.menu_page_left {
+  position: fixed;
+  z-index: 1;
   height: 100vh;
   width: 100%;
-  color: antiquewhite;
+}
+
+.menu_page-small {
+  height: 100vh;
+  bottom: 0;
+  width: 20%;
   text-align: center;
+  background-color: #611a1a;
 }
 
-.landing_page-foreground_title1 {
-  padding-top: 15rem;
-}
-
-.landing_page-foreground_title2 {
-  margin-top: 2rem;
-}
-
-/* main - page-000 */
-.page_1,
-.page_2 {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-  background-color: #dee0e6;
-  line-height: 30px;
-  font-size: 20px;
-  text-align: center;
-}
-
-#page-1 {
-  height: 80vh;
-}
-
-#page-2 {
-  background-color: white;
-}
-
-.page_1-sub_page {
-  padding-top: 5rem;
-}
-
-.page_1-sub_page p {
-  margin-top: 2rem;
-}
-
-.page_2-sub_page .row {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-}
-
-.page_2-sub_page img {
-  height: 387px;
-  width: 614px;
-  display: flex;
-  justify-content: center;
-}
-
-.page_2-sub_page p {
+.menu_close-btn {
   position: relative;
-  top: 30%;
+  padding-top: 2rem;
+}
+
+.right_close-btn {
+  left: 1rem;
+}
+
+.left_close-btn {
+  left: 14.45rem;
+}
+
+.menu_list a {
+  display: block;
+  margin-top: 2rem;
+  color: whitesmoke;
+}
+
+.menu_list a:hover {
+  text-decoration: underline;
+}
+
+.menu_list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 4rem;
+}
+
+.right-menu {
+  position: absolute;
+  /* box-shadow: 0px 0px 10px black; */
+  right: 0;
+}
+
+left-menu {
+  position: absolute;
+  /* box-shadow: 0px 0px 10px black; */
+  left: 0;
+}
+
+.what_is_this {
+  text-align: center;
+}
+
+.what_is-caption {
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+}
+
+.about_app {
+  text-align: center;
+}
+
+.about_app h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.about_app-caption {
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+}
+
+.form_section {
+  text-align: center;
+}
+
+.feedback_form {
+  width: 50%;
+}
+
+.form_section {
+  background-color: #9c8888;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  color: whitesmoke;
+}
+
+.form_section-h2 {
+  margin-bottom: 2rem;
+  font-size: 30px;
+}
+
+.footer_section {
+  text-align: center;
+  background-color: #3a0e0e;
+}
+
+.footer_section .row {
+  padding-top: 1rem;
+  margin-bottom: 1rem;
+  color: whitesmoke;
+}
+
+.footer_section a {
+  color: whitesmoke;
+}
+
+.footer_section h5 {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.caption {
+  color: white;
 }
