@@ -15,7 +15,6 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="stylesheet" href="./css/phone_styles.css" />
     <title>KAYCA | Polling System</title>
   </head>
   <body>
@@ -36,7 +35,7 @@
       <!-- user profile -->
       <div class="profile_icon" id="user-profile">
         <img
-          class="icon_size-profile"
+          class="icon_size"
           src="./img/profile.svg"
           alt="user profile icon"
         />
@@ -50,7 +49,7 @@
       </span>
       <ul class="container">
         <li>
-          <img class="logo_size" src="./img/kanuflag.jpg" alt="party logo" />
+          <img class="logo_size" src="./img/kanulogo.jpeg" alt="party logo" />
         </li>
         <li>
           <a class="menu_buttons" href="#">Dashboard</a>
@@ -60,6 +59,9 @@
         </li>
         <li>
           <a class="menu_buttons" href="#">Sign-Up</a>
+        </li>
+        <li>
+          <a class="menu_buttons" href="index.html#feedback-form">Contact Us</a>
         </li>
       </ul>
     </div>
@@ -71,7 +73,7 @@
       </span>
       <ul class="container">
         <li>
-          <img class="logo_size" src="./img/kanuflag.jpg" alt="party logo" />
+          <img class="logo_size" src="./img/kanulogo.jpeg" alt="party logo" />
         </li>
         <li>
           <a class="menu_buttons" href="#">Vote</a>
@@ -131,7 +133,7 @@
 
       <!-- page 2 -->
       <div class="page_2" id="page-2">
-        <div class="page_2-sub_page container-fluid">
+        <div class="page_2-sub_page container">
           <h2>What Does This Web App Do?</h2>
           <!-- grid -->
           <div class="row">
@@ -178,24 +180,94 @@
               </p>
             </div>
           </div>
-          <!-- grid -->
-          <div class="row">
-            <div class="col-md-6">
-              <p>
-                <span>Our Sponsors</span> <br />
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga,
-                reprehenderit voluptatem corrupti quae quis obcaecati, suscipit
-                ea ducimus, sequi cum nemo sed repellendus reiciendis corporis
-                quod laborum aliquid laboriosam omnis!
-              </p>
-            </div>
-            <div class="col-md-6">
-              <img src="./img/sponsors.svg" alt="sponsors" />
-            </div>
-          </div>
         </div>
       </div>
+
+      <!-- user form -->
+      <div class="form_section">
+        <!-- feedback form -->
+        <h2 class="form_section-h2" id="feedback-form">Feedback</h2>
+        <form action="" class="form-group feedback_form container">
+          <input
+            type="text"
+            name="first_name"
+            id="first_name"
+            placeholder="first name"
+            class="form-control"
+          />
+          <br />
+          <input
+            type="text"
+            name="second_name"
+            id="second_name"
+            placeholder="second name"
+            class="form-control"
+          />
+          <br />
+          <input
+            type="email"
+            name="user_email"
+            id="user_email"
+            placeholder="email address"
+            class="form-control"
+          />
+          <br />
+          <textarea
+            name="your_message"
+            id="your_message"
+            cols="30"
+            rows="10"
+            class="form-control"
+            placeholder="your feedback is appreciated"
+          ></textarea>
+          <br />
+          <button type="submit" class="btn btn-outline-success">submit</button>
+        </form>
+      </div>
     </div>
+
+    <!--footer-->
+    <footer class="footer">
+      <!-- grid -->
+      <div class="row">
+        <div class="col-md-4">
+          <h5>Relevant links</h5>
+          <ul>
+            <li><a href="#">Why KAYCA</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">KAYCA projects</a></li>
+            <li><a href="#">Vision 2022</a></li>
+            <li><a href="#">Affiliate programs</a></li>
+            <li><a href="#">KANU-Main party</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5>Site map</h5>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Log-in</a></li>
+            <li><a href="#">Sign-up</a></li>
+            <li><a href="#">Vote</a></li>
+            <li><a href="#">Results</a></li>
+            <li><a href="#">Poll dates</a></li>
+            <li><a href="#">Our sponsors</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5>Contact us</h5>
+          <ul>
+            <li>Kajiado | 53156-551</li>
+            <li>Tel: +254 712 345 678</li>
+            <li>Email: <span>kaycaemail@example.com</span></li>
+            <li><a href="#">Twitter: @kayca_kajidao</a></li>
+            <li><a href="#">Facebook: kayca_kajiado</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- copyright -->
+      <p class="caption">&copy; 2020 Loisa Kitakaya | kitakayaloisa@gmai.com</p>
+    </footer>
   </body>
   <script src="./js/main.js"></script>
   <script src="./js/jquery.js"></script>

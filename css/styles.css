@@ -108,11 +108,6 @@ body {
 }
 
 .icon_size {
-  height: 32px;
-  width: 32px;
-}
-
-.icon_size-profile {
   height: 38px;
   width: 38px;
 }
@@ -120,7 +115,7 @@ body {
 .icon_size-down-arrow {
   height: 60px;
   width: 60px;
-  margin-top: 13rem;
+  margin-top: 10rem;
 }
 
 .logo_size {
@@ -289,7 +284,7 @@ body {
 }
 
 #page-1 {
-  height: 80vh;
+  height: 100vh;
 }
 
 #page-2 {
@@ -297,7 +292,7 @@ body {
 }
 
 .page_1-sub_page {
-  padding-top: 5rem;
+  padding-top: 10rem;
 }
 
 .page_1-sub_page p {
@@ -319,4 +314,54 @@ body {
 .page_2-sub_page p {
   position: relative;
   top: 30%;
+}
+
+/* footer styles */
+.footer {
+  background-color: #0e1d3a;
+  color: whitesmoke;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.footer ul,
+.footer h5 {
+  text-align: center;
+  list-style: none;
+}
+
+.footer h5 {
+  padding-top: 1rem;
+  font-weight: bold;
+  color: white;
+}
+
+.footer a {
+  color: whitesmoke;
+}
+
+.footer .row {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.feedback_form {
+  width: 50%;
+  padding-bottom: 1rem;
+}
+
+.form_section {
+  width: 100%;
+  text-align: center;
+  background-color: #dee0e6;
+  padding-bottom: 1rem;
+}
+
+.form_section-h2 {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+.caption {
+  /* padding-bottom: 1rem; */
 }
