@@ -305,8 +305,8 @@ body {
 }
 
 .page_2-sub_page img {
-  height: 387px;
-  width: 614px;
+  height: 300px;
+  width: 500px;
   display: flex;
   justify-content: center;
 }
@@ -314,6 +314,11 @@ body {
 .page_2-sub_page p {
   position: relative;
   top: 30%;
+}
+
+.topic {
+  font-weight: bolder;
+  font-size: 25px;
 }
 
 /* footer styles */
@@ -360,8 +365,4 @@ body {
 .form_section-h2 {
   padding-top: 2rem;
   padding-bottom: 1rem;
-}
-
-.caption {
-  /* padding-bottom: 1rem; */
 }
