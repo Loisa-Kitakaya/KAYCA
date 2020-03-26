@@ -14,10 +14,11 @@
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="./css/bulma.css" />
     <link rel="stylesheet" href="./css/styles.css" />
     <link
       rel="stylesheet"
-      media="screen and (max-width: 600px)"
+      media="screen and (max-width: 768px)"
       href="./css/phone_styles.css"
     />
     <title>KAYCA | Polling System</title>
@@ -25,74 +26,58 @@
   <body>
     <!-- navigation bar -->
     <nav class="navbar" id="navigation-bar">
+      <!-- menus -->
+
       <!-- menu -->
-      <div class="menu_icon" id="user-menu">
-        <img class="icon_size" src="./img/menu.svg" alt="menu icon" />
+      <div class="image is-32x32 nav-menu-btn" id="user-menu">
+        <img src="./img/menu.svg" alt="app menu icon" />
       </div>
       <!-- logo -->
       <div class="logo">
         <a href="index.html">
-          <h2 id="logo-text">
-            KAYCA POLLS
-          </h2>
+          <h2 id="logo-text">KAYCA POLLS</h2>
         </a>
       </div>
       <!-- user profile -->
-      <div class="profile_icon" id="user-profile">
-        <img
-          class="icon_size"
-          src="./img/profile.svg"
-          alt="user profile icon"
-        />
+      <div class="image is-32x32 nav-menu-btn" id="user-profile">
+        <img src="./img/profile.svg" alt="user profile icon" />
       </div>
     </nav>
 
     <!-- right menu -->
-    <div class="right_menu" id="right-menu">
-      <span class="close-btn right_close-btn" id="right-close-btn">
-        <img class="icon_size" src="./img/close-btn.svg" alt="close button" />
-      </span>
-      <ul class="container">
-        <li>
-          <img class="logo_size" src="./img/kanulogo.jpeg" alt="party logo" />
-        </li>
-        <li>
+    <div class="menu_page_right" id="right-menu">
+      <div class="menu_page-small right-menu">
+        <span
+          class="image is-24x24 right_close-btn menu_close-btn"
+          id="right-close-btn"
+        >
+          <img src="./img/close-btn.svg" alt="close button" />
+        </span>
+        <div class="menu_list">
           <a class="menu_buttons" href="#">Dashboard</a>
-        </li>
-        <li>
           <a class="menu_buttons" href="#">Log-In</a>
-        </li>
-        <li>
           <a class="menu_buttons" href="#">Sign-Up</a>
-        </li>
-        <li>
           <a class="menu_buttons" href="index.html#feedback-form">Contact Us</a>
-        </li>
-      </ul>
+        </div>
+      </div>
     </div>
 
     <!-- left menu -->
-    <div class="left_menu" id="left-menu">
-      <span class="close-btn left_close-btn" id="left-close-btn">
-        <img class="icon_size" src="./img/close-btn.svg" alt="close button" />
-      </span>
-      <ul class="container">
-        <li>
-          <img class="logo_size" src="./img/kanulogo.jpeg" alt="party logo" />
-        </li>
-        <li>
+    <div class="menu_page_left" id="left-menu">
+      <div class="menu_page-small left-menu">
+        <span
+          class="image is-24x24 left_close-btn menu_close-btn"
+          id="left-close-btn"
+        >
+          <img src="./img/close-btn.svg" alt="close button" />
+        </span>
+        <div class="menu_list">
           <a class="menu_buttons" href="#">Vote</a>
-        </li>
-        <li>
           <a class="menu_buttons" href="#">Results</a>
-        </li>
-        <li>
           <a class="menu_buttons" href="#">Poll Dates</a>
-        </li>
-        <li>
           <a class="menu_buttons" href="#">Our Sponsors</a>
-        </li>
-      </ul>
+        </div>
+      </div>
     </div>
 
     <!-- main page -->
@@ -106,85 +91,27 @@
           <h2 class="landing_page-foreground_title2">
             Vote for your ideal candidate now
           </h2>
-          <div class="pulse">
-            <a href="#page-1">
-              <img
-                class="icon_size-down-arrow"
-                src="./img/down-arrow.svg"
-                alt="continue to next page arrow"
-              />
-            </a>
-          </div>
         </div>
       </div>
 
-      <!-- page 1 -->
-      <div class="page_1" id="page-1">
-        <div class="page_1-sub_page container">
-          <h2>What Is This?</h2>
+      <!-- about -->
+      <div class="about_app container" id="about-app">
+        <div class="about_app-caption">
+          <h3>About This Web-App</h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae
-            temporibus, quidem totam, alias quibusdam magni ea aperiam voluptas
-            similique voluptate mollitia ipsam, delectus illo harum debitis
-            sequi rerum neque nesciunt deserunt recusandae obcaecati. Molestias
-            repudiandae debitis pariatur atque temporibus fugiat. Provident quas
-            dolorum voluptate dolorem possimus labore, quibusdam saepe itaque
-            nostrum voluptates facilis soluta error illum cum ex voluptatum
-            nobis consequuntur officiis accusantium tempora alias! Cumque eaque
-            corporis quas harum atque dolores aperiam reiciendis quaerat!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
+            nostrum impedit, magni itaque, tempore iure, pariatur culpa soluta
+            at veritatis tempora adipisci repellendus quidem animi error ex.
+            Accusamus architecto excepturi dolorem. Nostrum, quam. Maxime est
+            modi corrupti culpa deserunt iusto explicabo ab laborum quibusdam.
+            Amet ipsum exercitationem fugiat consectetur. Quam aspernatur non
+            nam culpa corporis sunt labore quod nulla laudantium, beatae
+            excepturi velit aperiam explicabo fugiat recusandae mollitia ut
+            temporibus, inventore molestiae qui. Quod, provident. Cupiditate
+            blanditiis ea temporibus recusandae illum, libero error possimus
+            dicta rerum doloribus veniam, ipsum in excepturi amet ex nam sint
+            quis adipisci. Modi, nemo esse!
           </p>
-        </div>
-      </div>
-
-      <!-- page 2 -->
-      <div class="page_2" id="page-2">
-        <div class="page_2-sub_page container">
-          <h2>What Does This Web App Do?</h2>
-          <!-- grid -->
-          <div class="row">
-            <div class="col-md-6">
-              <img src="./img/voting.svg" alt="voting" />
-            </div>
-            <div class="col-md-6">
-              <p>
-                <span class="topic">Voting</span> <br />
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga,
-                reprehenderit voluptatem corrupti quae quis obcaecati, suscipit
-                ea ducimus, sequi cum nemo sed repellendus reiciendis corporis
-                quod laborum aliquid laboriosam omnis!
-              </p>
-            </div>
-          </div>
-          <!-- grid -->
-          <div class="row">
-            <div class="col-md-6">
-              <p>
-                <span class="topic">Live Results</span> <br />
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga,
-                reprehenderit voluptatem corrupti quae quis obcaecati, suscipit
-                ea ducimus, sequi cum nemo sed repellendus reiciendis corporis
-                quod laborum aliquid laboriosam omnis!
-              </p>
-            </div>
-            <div class="col-md-6">
-              <img src="./img/results.svg" alt="results" />
-            </div>
-          </div>
-          <!-- grid -->
-          <div class="row">
-            <div class="col-md-6">
-              <img src="./img/date.svg" alt="date" />
-            </div>
-            <div class="col-md-6">
-              <p>
-                <span class="topic">Poll Dates</span> <br />
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga,
-                reprehenderit voluptatem corrupti quae quis obcaecati, suscipit
-                ea ducimus, sequi cum nemo sed repellendus reiciendis corporis
-                quod laborum aliquid laboriosam omnis!
-              </p>
-            </div>
-          </div>
         </div>
       </div>
 
@@ -192,7 +119,7 @@
       <div class="form_section">
         <!-- feedback form -->
         <h2 class="form_section-h2" id="feedback-form">Feedback</h2>
-        <form action="" class="form-group feedback_form container">
+        <form action="" class="form-group feedback_form container jumbotron">
           <input
             type="text"
             name="first_name"
@@ -226,53 +153,55 @@
             placeholder="your feedback is appreciated"
           ></textarea>
           <br />
-          <button type="submit" class="btn btn-outline-success">submit</button>
+          <button type="submit" class="btn btn-success">submit</button>
         </form>
       </div>
-    </div>
 
-    <!--footer-->
-    <footer class="footer">
-      <!-- grid -->
-      <div class="row">
-        <div class="col-md-4">
-          <h5>Relevant links</h5>
-          <ul>
-            <li><a href="#">Why KAYCA</a></li>
-            <li><a href="#">FAQs</a></li>
-            <li><a href="#">KAYCA projects</a></li>
-            <li><a href="#">Vision 2022</a></li>
-            <li><a href="#">Affiliate programs</a></li>
-            <li><a href="#">KANU-Main party</a></li>
-          </ul>
+      <!-- footer -->
+      <footer class="footer_section">
+        <!-- grid -->
+        <div class="row">
+          <div class="col-md-4">
+            <h5>Relevant links</h5>
+            <ul>
+              <li><a href="#">Why KAYCA</a></li>
+              <li><a href="#">FAQs</a></li>
+              <li><a href="#">KAYCA projects</a></li>
+              <li><a href="#">Vision 2022</a></li>
+              <li><a href="#">Affiliate programs</a></li>
+              <li><a href="#">KANU-Main party</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h5>Site map</h5>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Dashboard</a></li>
+              <li><a href="#">Log-in</a></li>
+              <li><a href="#">Sign-up</a></li>
+              <li><a href="#">Vote</a></li>
+              <li><a href="#">Results</a></li>
+              <li><a href="#">Poll dates</a></li>
+              <li><a href="#">Our sponsors</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h5>Contact us</h5>
+            <ul>
+              <li>Kajiado | 53156-551</li>
+              <li>Tel: +254 712 345 678</li>
+              <li>Email: <span>kaycaemail@example.com</span></li>
+              <li><a href="#">Twitter: @kayca_kajidao</a></li>
+              <li><a href="#">Facebook: kayca_kajiado</a></li>
+            </ul>
+          </div>
         </div>
-        <div class="col-md-4">
-          <h5>Site map</h5>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Dashboard</a></li>
-            <li><a href="#">Log-in</a></li>
-            <li><a href="#">Sign-up</a></li>
-            <li><a href="#">Vote</a></li>
-            <li><a href="#">Results</a></li>
-            <li><a href="#">Poll dates</a></li>
-            <li><a href="#">Our sponsors</a></li>
-          </ul>
-        </div>
-        <div class="col-md-4">
-          <h5>Contact us</h5>
-          <ul>
-            <li>Kajiado | 53156-551</li>
-            <li>Tel: +254 712 345 678</li>
-            <li>Email: <span>kaycaemail@example.com</span></li>
-            <li><a href="#">Twitter: @kayca_kajidao</a></li>
-            <li><a href="#">Facebook: kayca_kajiado</a></li>
-          </ul>
-        </div>
-      </div>
-      <!-- copyright -->
-      <p class="caption">&copy; 2020 Loisa Kitakaya | kitakayaloisa@gmai.com</p>
-    </footer>
+        <!-- copyright -->
+        <p class="caption">
+          &copy; 2020 Loisa Kitakaya | kitakayaloisa@gmai.com
+        </p>
+      </footer>
+    </div>
   </body>
   <script src="./js/main.js"></script>
 </html>

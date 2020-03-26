@@ -9,7 +9,8 @@ let deactivateRightMenu = document.getElementById("right-close-btn");
 let activateLeftMenu = document.getElementById("user-menu");
 let deactivateLeftMenu = document.getElementById("left-close-btn");
 
-let deactivateMenus = document.getElementById("main");
+let deactivateMenu1 = document.getElementById("right-menu");
+let deactivateMenu2 = document.getElementById("left-menu");
 
 let logoText = document.getElementById("logo-text");
 
@@ -44,7 +45,16 @@ deactivateLeftMenu.addEventListener("click", function() {
   logoText.innerHTML = "KAYCA POLLS";
 });
 
-deactivateMenus.addEventListener("click", function() {
+deactivateMenu1.addEventListener("click", function() {
+  $("#right-menu").fadeOut();
+  $("#left-menu").fadeOut();
+  $("#main").css({ opacity: "1" });
+  $("#menu_info").css({ opacity: "1" });
+  $("#user_info").css({ opacity: "1" });
+  logoText.innerHTML = "KAYCA POLLS";
+});
+
+deactivateMenu2.addEventListener("click", function() {
   $("#right-menu").fadeOut();
   $("#left-menu").fadeOut();
   $("#main").css({ opacity: "1" });
@@ -60,28 +70,12 @@ function scrollEvent() {
   let scrollIn = document.getElementById("navigation-bar");
 
   if (scroll >= 75) {
-    scrollIn.style.animation = "scrollEffectIn 100ms ease-out both";
-    $("#navigation-bar").css({ "background-color": "#0e1d3a" });
+    scrollIn.style.animation = "scrollEffectIn 500ms ease-out both";
+    $("#navigation-bar").css({ "background-color": "#3a0e0e" });
     $("#navigation-bar").css({ "box-shadow": "0px 2px 10px black" });
   } else if (scroll < 75) {
     scrollIn.style.animation = "scrollEffectOut 100ms ease-in both";
     $("#navigation-bar").css({ "background-color": "initial" });
     $("#navigation-bar").css({ "box-shadow": "initial" });
-  }
-
-  if (scroll >= 75) {
-    $(".menu_icon").css({ "padding-top": "0.25rem" });
-    $(".menu_icon").css({ "padding-bottom": "0.25rem" });
-    $(".profile_icon").css({ "padding-top": "0.25rem" });
-    $(".profile_icon").css({ "padding-bottom": "0.25rem" });
-    $("#logo-text").css({ "padding-top": "0.25rem" });
-    $("#logo-text").css({ "padding-bottom": "0rem" });
-  } else if (scroll < 75) {
-    $(".menu_icon").css({ "padding-top": "1rem" });
-    $(".menu_icon").css({ "padding-bottom": "1rem" });
-    $(".profile_icon").css({ "padding-top": "1rem" });
-    $(".profile_icon").css({ "padding-bottom": "1rem" });
-    $("#logo-text").css({ "padding-top": "1rem" });
-    $("#logo-text").css({ "padding-bottom": "0rem" });
   }
 }
