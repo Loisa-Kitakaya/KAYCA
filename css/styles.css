@@ -75,7 +75,8 @@ body {
 }
 
 .landing_page {
-  background-image: url("https://images.pexels.com/photos/681467/pexels-photo-681467.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  /* background-image: url("https://images.pexels.com/photos/681467/pexels-photo-681467.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"); */
+  background-image: url("http://kanuparty.ke/images/kanuflag.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -86,6 +87,7 @@ body {
   position: relative;
   top: 40%;
   text-align: center;
+  background-color: #3a0e0e77;
 }
 
 .landing_page-foreground h1,
